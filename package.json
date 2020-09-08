@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "test:base": "testcafe chrome:headless tests/visualTesting.js -s src/images --take-snapshot base",
+        "test:actual": "testcafe chrome:headless tests/visualTesting.js -s src/images --take-snapshot actual",
+        "test:multiple-window": "testcafe chrome tests/Multiple_Window/*.js --skip-js-errors"
+    },
+    "dependencies": {
+        "testcafe": "1.9.1",
+        "testcafe-blink-diff": "^0.4.6"
+    }
+}
