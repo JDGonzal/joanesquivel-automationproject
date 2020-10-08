@@ -5,7 +5,9 @@
         "test:multiple-window": "testcafe chrome tests/Multiple_Window/*.js --skip-js-errors"
     },
     "dependencies": {
-        "testcafe": "1.9.1",
+        "testcafe": "1.9.1"
+    },
+    "devDependencies": {
         "testcafe-blink-diff": "^0.4.6"
     }
 }

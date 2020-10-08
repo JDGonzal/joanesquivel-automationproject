@@ -20,12 +20,24 @@ Other sites for suppor are:
     ```bash
     npm install --save-dev testcafe
     ```
- 4. In the work directory run this command to get all dependencies:
+ 4. Install the testcage-blink-diff
+    ```bash
+    npm i testcafe-blink-diff --save-dev
+    ```
+    or 
+    ```bash
+    npm install testcafe-blink-diff
+    ```
+ 5. In the work directory run this command to get all dependencies:
     ```bash
     npm install
     ```
     more info in this site:
     [Testcafe guides](https://devexpress.github.io/testcafe/documentation/guides/basic-guides/install-testcafe.html)
+ 6. I ran this command to get a html file with info
+   ```bash
+   npx testcafe-blink-diff src/images/Snapshots reports/google --compare base:actual --open -threshold 0.03 #<- 3% is OK
+   ```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

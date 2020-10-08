@@ -62,3 +62,29 @@ test('Google Testing after search - Var 1', async t => {
 
 
   });
+
+  test('Google Testing after search - Var 3', async t => {
+  
+    //How to get the test name assigned in a variable
+    testName = t.testRun.test.name;
+
+    //Page interactions
+    await t
+        .typeText('input.gLFyf', 'Otra Cosa')
+        .click('input.gNO89b')
+
+    //Snapshot code
+
+    //Scenario 1/Breakpoint 1: Search in breakpoint of 1600 * 1200 - Width * Height
+    //The snapshot will be taken in full page
+
+    await t.resizeWindow(900,1000);
+    await t.wait(5000);
+
+    await takeSnapshot(t, testName, {
+        fullPage: true, 
+        timeout:2000
+    });
+
+
+  });
